@@ -1,0 +1,104 @@
+@media screen and (min-width: 1200px) {
+  /* -------------------------MAIN SETTINGS---------------------------------- */
+
+  .container {
+    width: 1158px;
+    max-width: 1158px;
+  }
+  .container-header,
+  .container-footer {
+    max-width: 1258px;
+  }
+  .section {
+    padding: 120px 0;
+  }
+  .title {
+    margin: 0 0 48px 0;
+  }
+  .link.description {
+    font-weight: normal;
+  }
+  /* -------------------------HEADER---------------------------------- */
+
+  .container-header {
+    padding: 24px 0;
+  }
+  .header-menu-container {
+    display: none;
+  }
+  .menu {
+    gap: 315px;
+  }
+  .nav-link.active::after {
+    top: 240%;
+  }
+  .contacts-icons {
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin: 0;
+    width: max-content;
+  }
+
+  /* -------------------------INDEX.HTML---------------------------------- */
+  .section-features {
+    padding: 120px 0 0 0;
+  }
+  .feature-svg-bg {
+    background-color: var(--cloud-color);
+    margin-bottom: 8px;
+    padding: 24px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .doing {
+    display: block;
+  }
+  .doing-items {
+    display: flex;
+  }
+  .feature-items,
+  .doing-items,
+  .team-items,
+  .customers-items {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0;
+  }
+  .feature-item .crosstitle {
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: var(--semibold-weight);
+  }
+
+  /* -------------------------INDEX.HTML---------------------------------- */
+
+  .card-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  /* -------------------------FOOTER---------------------------------- */
+  .footer-container {
+    flex-direction: row;
+    gap: 80px;
+  }
+  .footer-wrapper {
+    margin-top: 100px;
+  }
+  .footer-subscribe {
+    margin-top: 98px;
+  }
+  .footer-wrapper {
+    margin-right: 120px;
+  }
+  .footer-subscribe {
+    margin-left: 0;
+  }
+  .row {
+    margin-left: 0;
+  }
+  .footer-container > .row {
+    gap: 0px;
+  }
+}
