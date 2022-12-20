@@ -106,7 +106,13 @@ ul {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/people-office@2x.jpg");
+    background-image: linear-gradient(
+        90deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url("../images/people-office@2x.jpg");
   }
 }
 .team {
