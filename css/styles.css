@@ -618,7 +618,6 @@ ul {
   flex-direction: column;
   margin-bottom: 8px;
   position: relative;
-  /* margin-left: 20px; */
 }
 .form-field label,
 .form-field textarea,
@@ -924,9 +923,6 @@ ul {
   .close {
     top: 24px;
     right: 24px;
-  }
-  .form-field {
-    margin-left: 0;
   }
   .form,
   .form-field textarea {
