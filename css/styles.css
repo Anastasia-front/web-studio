@@ -66,14 +66,15 @@ ul {
   margin: 0 0 32px 0;
 }
 .container {
-  max-width: 396px;
+  width: 100vw;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
 @media screen and (min-width: 428px) {
   .container {
-    width: 396px;
+    max-width: 396px;
   }
 }
 
@@ -413,7 +414,7 @@ ul {
   gap: 72px;
 }
 .team-items {
-  width: 260px;
+  padding: 0 14px;
 }
 
 .feature-item > .crosstitle {
@@ -571,10 +572,8 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform var(--main-transition);
-  width: 392px;
-  min-width: 300px;
-  height: 590px;
-  min-height: 550px;
+  width: 300px;
+  height: 620px;
   background-color: var(--modal-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -582,8 +581,8 @@ ul {
 }
 .close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 20px;
+  right: 10px;
   background-color: var(--modal-color);
   border-style: none;
 }
@@ -605,7 +604,7 @@ ul {
 }
 
 .form {
-  width: 360px;
+  width: 260px;
   margin: 72px auto 24px;
   display: flex;
   flex-direction: column;
@@ -619,6 +618,7 @@ ul {
   flex-direction: column;
   margin-bottom: 8px;
   position: relative;
+  /* margin-left: 20px; */
 }
 .form-field label,
 .form-field textarea,
@@ -640,7 +640,7 @@ ul {
   transition: border var(--main-transition);
 }
 .form-field textarea {
-  width: 360px;
+  width: 260px;
   height: 120px;
   resize: none;
   padding: 8px 16px;
@@ -665,10 +665,7 @@ ul {
   margin-bottom: 16px;
 }
 .accept {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .checkbox {
@@ -756,10 +753,6 @@ ul {
 .burger-container {
   min-width: 320px;
   max-width: 1170px;
-  /* padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 .page-header .burger-container {
   min-height: 80px;
@@ -782,7 +775,7 @@ ul {
   min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
   margin: 0;
   padding: 0;
@@ -795,6 +788,7 @@ ul {
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 .menu-container {
@@ -829,7 +823,7 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 284px;
+  gap: 150px;
 }
 
 .mobile-menu .link {
@@ -839,7 +833,7 @@ ul {
 .burger-nav-items {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   margin-top: 80px;
   margin-left: 40px;
 }
@@ -851,19 +845,24 @@ ul {
 }
 .burger-svg-icon-close {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
 }
 .burger-contacts-icons {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   align-items: flex-start;
-  margin: 0 0 48px 40px;
+  margin: 0 0 30px 40px;
 }
 .link.description.contact-icon.burger-number,
 .mobile-menu.link.active {
   color: var(--blue-color);
+}
+.link.description.contact-icon.burger-number {
+  font-size: 25px;
 }
 .link.description.contact-icon.burger {
   font-size: 20px;
@@ -874,11 +873,9 @@ ul {
 
 .burger-svg-icons {
   display: flex;
-  gap: 56px;
+  gap: 30px;
   align-items: flex-start;
   margin: 0 0 48px 40px;
-}
-.burger-svg-icon-li {
 }
 .burger-svg-icon-link {
   background-color: var(--blue-color);
@@ -896,8 +893,8 @@ ul {
   /* -------------------------MAIN SETTINGS---------------------------------- */
 
   .container {
-    width: 736px;
     max-width: 736px;
+    /* max-width: 736px; */
     margin: 0 auto;
     padding: 0;
   }
@@ -971,8 +968,7 @@ ul {
   }
   .team-items {
     row-gap: 56px;
-    margin: 0 92px;
-    width: fit-content;
+    padding: 0 92px;
   }
   .customers-items {
     margin: 0 92px;
@@ -1124,8 +1120,10 @@ ul {
     font-size: 20px;
     font-weight: var(--semibold-weight);
   }
-
-  /* -------------------------INDEX.HTML---------------------------------- */
+  .team-items {
+    padding: 0 14px;
+  }
+  /* -------------------------PORTFOLIO.HTML---------------------------------- */
 
   .card-item {
     flex-basis: calc((100% - 48px) / 3);
