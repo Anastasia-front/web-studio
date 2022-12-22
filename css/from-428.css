@@ -33,9 +33,6 @@
     top: 24px;
     right: 24px;
   }
-  .form-field {
-    margin-left: 0;
-  }
   .form,
   .form-field textarea {
     width: 360px;

@@ -351,7 +351,6 @@ ul {
   gap: 72px;
 }
 .footer-button {
-  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,7 +399,7 @@ ul {
   margin-bottom: 48px;
 }
 .btn.backward {
-  width: 170px;
+  padding: 16px 32px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -435,10 +434,9 @@ ul {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 72px;
+  row-gap: 32px;
   column-gap: 16px;
 }
-
 .customers-item {
   flex-basis: calc((100% - 48px) / 2);
 }
@@ -464,7 +462,6 @@ ul {
   margin: 0 0 48px 0;
 }
 .btn {
-  width: auto;
   padding: 12px 24px;
 }
 .card {
@@ -536,6 +533,9 @@ ul {
   background-color: var(--blue-color-with-opacity);
   transition: height var(--main-transition);
 }
+.hide-smaller-than-428px {
+  display: none;
+}
 .card-item:hover .overlay {
   height: 300px;
 }
@@ -543,7 +543,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 50px 20px;
+  padding: 12px 20px;
   color: var(--cloud-color);
   font-size: 24px;
 }
@@ -573,7 +573,7 @@ ul {
   transform: translate(-50%, -50%);
   transition: transform var(--main-transition);
   width: 300px;
-  height: 620px;
+  height: 80vh;
   background-color: var(--modal-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -914,11 +914,20 @@ ul {
   .team-items {
     padding: 0 52px;
   }
+  .customers-items {
+    row-gap: 72px;
+  }
+  .hide-smaller-than-428px {
+    display: inline;
+  }
+  .card-overlay-text {
+    padding: 50px 20px;
+  }
   /* -------------------------MODAL---------------------------------- */
 
   .modal {
     width: 392px;
-    height: 600px;
+    height: 75%;
   }
   .close {
     top: 24px;
