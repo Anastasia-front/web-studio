@@ -776,6 +776,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--navy-blue);
 
   margin: 0;
   padding: 0;
@@ -942,7 +943,7 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 24px;
+    margin: 0 0 24px 0;
   }
 }
 
