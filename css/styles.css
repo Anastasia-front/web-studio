@@ -71,13 +71,6 @@ ul {
   margin: 0 auto;
   padding: 0 16px;
 }
-
-@media screen and (min-width: 428px) {
-  .container {
-    max-width: 396px;
-  }
-}
-
 .section {
   padding: 96px 0;
 }
@@ -141,12 +134,14 @@ ul {
     color var(--main-transition), border var(--main-transition);
 }
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.btn:active {
   background-color: var(--blue-color);
   color: var(--cloud-color);
   border: 1px solid var(--blue-color);
 }
 .button-item:hover,
+.button-item:active,
 .button-item:focus {
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -164,10 +159,13 @@ ul {
   transition: background-color var(--main-transition);
 }
 .btn.backward:hover,
+.btn.backward:active,
 .btn.backward:focus,
 .send:hover,
+.send:active,
 .send :focus,
 .footer-button:hover,
+.footer-button:active,
 .footer-button:focus {
   background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -218,6 +216,7 @@ ul {
   transition: color var(--main-transition);
 }
 .link:hover,
+.link:active,
 .link:focus {
   color: var(--blue-color);
 }
@@ -280,7 +279,8 @@ ul {
   transition: box-shadow var(--main-transition);
   overflow: hidden;
 }
-.card-item:hover {
+.card-item:hover,
+.card-item:active {
   box-shadow: 0px 1px 10px rgba(46, 47, 66, 0.58);
 }
 /* -------------------------MARGINS/PADDINGS/WIDTH/HEIGHT---------------------------------- */
@@ -389,12 +389,7 @@ ul {
   margin-bottom: 16px;
 }
 /* -------------------------INDEX.HTML---------------------------------- */
-.container-hero,
-.container-features,
-.container-customers {
-  margin: 0 auto;
-}
-.container-hero > .title {
+.hero .title {
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -444,9 +439,6 @@ ul {
 .section-portfolio {
   padding: 48px 0;
 }
-.container-card-item {
-  margin: 32px 16px;
-}
 .card-items {
   display: flex;
   flex-direction: column;
@@ -467,8 +459,12 @@ ul {
 .card {
   padding: 0 0 120px 0;
 }
+.container-card-item {
+  margin-left: 10px;
+}
 /* -------------------------SVG---------------------------------- */
-.contacts-icon:hover .svg {
+.contacts-icon:hover .svg,
+.contacts-icon:active .svg {
   fill: var(--blue-color);
 }
 .team-svg-icon-link {
@@ -481,14 +477,16 @@ ul {
   height: 40px;
   transition: background-color var(--main-transition);
 }
-.team-svg-icon-link:hover {
+.team-svg-icon-link:hover,
+.team-svg-icon-link:active {
   background-color: var(--green-color);
 }
 .customers-svg-icon {
   fill: #8e8f99;
   transition: fill var(--main-transition);
 }
-.customers-svg-icon:hover {
+.customers-svg-icon:hover,
+.customers-svg-icon:active {
   fill: var(--blue-color);
 }
 .customers-svg-link {
@@ -499,7 +497,8 @@ ul {
   align-items: center;
   transition: border var(--main-transition);
 }
-.customers-svg-link:hover {
+.customers-svg-link:hover,
+.customers-svg-link:active {
   border: 1px solid var(--blue-color);
 }
 .footer-svg-icon-link {
@@ -511,7 +510,8 @@ ul {
   padding: 8px;
   transition: background-color var(--main-transition);
 }
-.footer-svg-icon-link:hover {
+.footer-svg-icon-link:hover,
+.footer-svg-icon-link:active {
   background-color: var(--green-color);
   opacity: 1;
 }
@@ -536,7 +536,8 @@ ul {
 .hide-smaller-than-428px {
   display: none;
 }
-.card-item:hover .overlay {
+.card-item:hover .overlay,
+.card-item:active .overlay {
   height: 300px;
 }
 .card-overlay-text {
@@ -563,7 +564,7 @@ ul {
   pointer-events: none;
   visibility: hidden;
 }
-.backdrop .is-hidden .modal {
+.backdrop.is-hidden.modal {
   transform: translate(-50%, -50%);
 }
 .modal {
@@ -638,6 +639,15 @@ ul {
   padding: 8px 45px;
   gap: 10px;
   transition: border var(--main-transition);
+}
+form input:not(:placeholder-shown):required:valid,
+form .footer-input:not(:placeholder-shown):required:valid {
+  border-color: green;
+}
+
+form input:not(:placeholder-shown):required:invalid,
+form .footer-input:not(:placeholder-shown):required:invalid {
+  border-color: red;
 }
 .form-field textarea {
   width: 260px;
@@ -727,7 +737,8 @@ ul {
   transition: background-color var(--main-transition),
     border var(--main-transition);
 }
-.send:hover {
+.send:hover,
+.send:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
 }
 
@@ -787,6 +798,7 @@ ul {
   outline: none;
 }
 .menu-toggle:hover,
+.menu-toggle:active,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
   margin-left: 20px;
@@ -894,6 +906,9 @@ ul {
 
 @media screen and (min-width: 428px) {
   /* -------------------------HEADER---------------------------------- */
+  .container {
+    max-width: 396px;
+  }
   .mobile-menu {
     gap: 284px;
   }
@@ -953,8 +968,6 @@ ul {
 
   .container {
     max-width: 736px;
-    /* max-width: 736px; */
-    margin: 0 auto;
     padding: 0;
   }
   .title {
@@ -1014,8 +1027,9 @@ ul {
     font-weight: normal;
   }
   /* -------------------------INDEX.HTML---------------------------------- */
-  .container-hero > .title {
+  .hero .title {
     width: 492px;
+    margin: 0 auto 48px;
   }
   .feature-items,
   .team-items {
@@ -1110,12 +1124,7 @@ ul {
   /* -------------------------MAIN SETTINGS---------------------------------- */
 
   .container {
-    width: 1158px;
     max-width: 1158px;
-  }
-  .container-header,
-  .container-footer {
-    max-width: 1258px;
   }
   .section {
     padding: 120px 0;
