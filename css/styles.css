@@ -679,7 +679,7 @@ form .footer-input:not(:placeholder-shown):required:invalid {
 }
 
 .checkbox {
-  appearance: none;
+  display: none;
 }
 .done {
   display: inline-block;
