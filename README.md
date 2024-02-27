@@ -1,1 +1,12 @@
-# Go to site pinned in description above for see the result of my first project on courses written only with HTML and CSS
+# First project with HTML, CSS and vanilla JS
+
+- Adaptive design
+- Optimize images
+- Deploy GithubPages
+
+## Screenshots
+
+![home page](/images/screenshots/1.png)
+![home page](/images/screenshots/2.png)
+![portfolio page](/images/screenshots/3.png)
+![portfolio page](/images/screenshots/4.png)
