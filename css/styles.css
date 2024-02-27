@@ -31,6 +31,10 @@ body {
   background-color: var(--white-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 li {
   list-style: none;
 }
