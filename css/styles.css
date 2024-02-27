@@ -795,6 +795,7 @@ form .footer-input:not(:placeholder-shown):required:invalid {
 
 .done {
   display: inline-block;
+  cursor: pointer;
   margin-right: 10px;
   width: 16px;
   height: 16px;
