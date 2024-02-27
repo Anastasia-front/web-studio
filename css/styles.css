@@ -1301,6 +1301,7 @@ form .footer-input:not(:placeholder-shown):required:invalid {
   .modal {
     width: 408px;
     height: 95%;
+    max-width: 600px;
   }
 }
 
