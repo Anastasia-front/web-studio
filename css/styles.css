@@ -29,6 +29,13 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height);
   background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 body.modal-open {
