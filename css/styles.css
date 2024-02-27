@@ -337,6 +337,8 @@ ul {
 .container-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .nav-items {
@@ -1148,19 +1150,9 @@ form .footer-input:not(:placeholder-shown):required:invalid {
     background-color: var(--blue-color);
   }
 
-  .container-nav {
-    column-gap: 77px;
-    row-gap: 0;
-  }
-
   .nav {
     display: flex;
     align-items: center;
-  }
-
-  .menu {
-    justify-content: space-between;
-    gap: 24.5%;
   }
 
   .menu-toggle {
@@ -1169,6 +1161,10 @@ form .footer-input:not(:placeholder-shown):required:invalid {
 
   .menu-container {
     display: none;
+  }
+
+  .contacts {
+    padding-left: 30px;
   }
 
   .contacts-icons {
