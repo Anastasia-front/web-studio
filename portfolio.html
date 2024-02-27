@@ -15,10 +15,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo/favicon-16x16.png">
-    <link rel="manifest" href="./images/logo/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/logo/site.webmanifest" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -28,69 +42,69 @@
           <a href="./index.html" class="logo web"
             ><span class="web">WEB</span>STUDIO</a
           >
-        <div class="menu">
-          <nav class="nav">
-            <ul class="nav-items">
-              <li class="nav-item">
-                <a href="./index.html" class="link ">Studio</a>
-              </li>
-              <li class="nav-item">
-                <a href="./portfolio.html" class="link nav-link active">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#"  onclick="return false;" class="link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-        <div class="contacts">
-          <ul class="contacts-icons">
-            <li class="contacts-icon">
-              <a
-                href="mailto:info@devstudio.com"
-                class="link description contact-icon"
-                >
-                <svg width="15" height="20" class="svg">
-                  <use href="./images/icons.svg#icon-envelop"></use>
-                </svg>
-                <span>info@devstudio.com</span> </a
-              >
-            </li>
-            <li class="contacts-icon">
-              <a href="tel:+110001111111" class="link description contact-icon"
-                ><svg width="14" height="15" class="svg phone">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg> <span>
-                  +11 (000) 111-11-11
-                </span> </a
-              >
-            </li>
-          </ul>
-        </div>
-        </div>
+          <div class="menu">
+            <nav class="nav">
+              <ul class="nav-items">
+                <li class="nav-item">
+                  <a href="./index.html" class="link">Studio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./portfolio.html" class="link nav-link active"
+                    >Portfolio</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <ul class="contacts-icons">
+                <li class="contacts-icon">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link description contact-icon"
+                  >
+                    <svg width="15" height="20" class="svg">
+                      <use href="./images/icons.svg#icon-envelop"></use>
+                    </svg>
+                    <span>info@devstudio.com</span>
+                  </a>
+                </li>
+                <li class="contacts-icon">
+                  <a
+                    href="tel:+110001111111"
+                    class="link description contact-icon"
+                    ><svg width="14" height="15" class="svg phone">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <span> +11 (000) 111-11-11 </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- ---------------BURGER-------------------------- -->
         <div class="header-menu-container">
           <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div>
-      <!-- ---------------BURGER-------------------------- -->
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <!-- ---------------BURGER-------------------------- -->
       </div>
     </header>
     <main>
@@ -99,19 +113,37 @@
           <h2 class="subtitle secret-name">empty</h2>
           <ul class="buttons-items">
             <li class="button-item">
-              <button class="btn" type="button">All</button>
+              <button class="btn" type="button" onclick="filterCards('All')">
+                All
+              </button>
             </li>
             <li class="button-item">
-              <button class="btn" type="button">Web Site</button>
+              <button
+                class="btn"
+                type="button"
+                onclick="filterCards('Web Site')"
+              >
+                Web Site
+              </button>
             </li>
             <li class="button-item">
-              <button class="btn" type="button">App</button>
+              <button class="btn" type="button" onclick="filterCards('App')">
+                App
+              </button>
             </li>
             <li class="button-item">
-              <button class="btn" type="button">Design</button>
+              <button class="btn" type="button" onclick="filterCards('Design')">
+                Design
+              </button>
             </li>
             <li class="button-item">
-              <button class="btn" type="button">Marketing</button>
+              <button
+                class="btn"
+                type="button"
+                onclick="filterCards('Marketing')"
+              >
+                Marketing
+              </button>
             </li>
           </ul>
         </div>
@@ -120,14 +152,21 @@
           <ul class="card-items">
             <li class="card-item">
               <img
-              srcset="./images/Banking-App-Interface-Concept.jpg 1x, ./images/Banking-App-Interface-Concept@2x.jpg 2x"
+                srcset="
+                  ./images/Banking-App-Interface-Concept.jpg    1x,
+                  ./images/Banking-App-Interface-Concept@2x.jpg 2x
+                "
                 src="./images/Banking-App-Interface-Concept.jpg"
                 alt="Banking App Interface Concept"
                 width="370"
                 height="300"
               />
               <div class="container-card-item">
-                <h3 class="crosstitle">Banking <span class="hide-smaller-than-428px">App Interface </span> Concept</h3>
+                <h3 class="crosstitle">
+                  Banking
+                  <span class="hide-smaller-than-428px">App Interface </span>
+                  Concept
+                </h3>
                 <p class="description">App</p>
               </div>
               <div class="overlay">
@@ -140,7 +179,10 @@
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Cashless-Payment.jpg 1x, ./images/Cashless-Payment@2x.jpg 2x"
+                srcset="
+                  ./images/Cashless-Payment.jpg    1x,
+                  ./images/Cashless-Payment@2x.jpg 2x
+                "
                 src="./images/Cashless-Payment.jpg"
                 alt="Cashless Payment"
                 width="370"
@@ -156,17 +198,21 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Meditaion-App.jpg 1x, ./images/Meditaion-App@2x.jpg 2x"
+                srcset="
+                  ./images/Meditaion-App.jpg    1x,
+                  ./images/Meditaion-App@2x.jpg 2x
+                "
                 src="./images/Meditaion-App.jpg"
                 alt="Meditaion App"
                 width="370"
                 height="300"
               />
               <div class="container-card-item">
-                <h3 class="crosstitle">Meditaion Appa</h3>
+                <h3 class="crosstitle">Meditaion App</h3>
                 <p class="description">App</p>
               </div>
               <div class="overlay">
@@ -175,10 +221,14 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Taxi-Service.jpg 1x, ./images/Taxi-Service@2x.jpg 2x"
+                srcset="
+                  ./images/Taxi-Service.jpg    1x,
+                  ./images/Taxi-Service@2x.jpg 2x
+                "
                 src="./images/Taxi-Service.jpg"
                 alt="Taxi Service"
                 width="370"
@@ -194,10 +244,14 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Screen-Illustrations.jpg 1x, ./images/Screen-Illustrations@2x.jpg 2x"
+                srcset="
+                  ./images/Screen-Illustrations.jpg    1x,
+                  ./images/Screen-Illustrations@2x.jpg 2x
+                "
                 src="./images/Screen-Illustrations.jpg"
                 alt="Screen Illustrations"
                 width="370"
@@ -213,10 +267,14 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Online-Courses.jpg 1x, ./images/Online-Courses@2x.jpg 2x"
+                srcset="
+                  ./images/Online-Courses.jpg    1x,
+                  ./images/Online-Courses@2x.jpg 2x
+                "
                 src="./images/Online-Courses.jpg"
                 alt="Online Courses"
                 width="370"
@@ -232,10 +290,14 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Instagram-Stories-Concept.jpg 1x, ./images/Instagram-Stories-Concept@2x.jpg 2x"
+                srcset="
+                  ./images/Instagram-Stories-Concept.jpg    1x,
+                  ./images/Instagram-Stories-Concept@2x.jpg 2x
+                "
                 src="./images/Instagram-Stories-Concept.jpg"
                 alt="Instagram Stories Concept"
                 width="370"
@@ -251,10 +313,14 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Organic-Food.jpg 1x, ./images/Organic-Food@2x.jpg 2x"
+                srcset="
+                  ./images/Organic-Food.jpg    1x,
+                  ./images/Organic-Food@2x.jpg 2x
+                "
                 src="./images/Organic-Food.jpg"
                 alt="Organic Food"
                 width="370"
@@ -270,10 +336,14 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
             <li class="card-item">
               <img
-              srcset="./images/Fresh-Coffee.jpg 1x, ./images/Fresh-Coffee@2x.jpg 2x"
+                srcset="
+                  ./images/Fresh-Coffee.jpg    1x,
+                  ./images/Fresh-Coffee@2x.jpg 2x
+                "
                 src="./images/Fresh-Coffee.jpg"
                 alt="Fresh Coffee"
                 width="370"
@@ -289,6 +359,7 @@
                   Inventore ducimus voluptas nobis. Porro quia vel ab officiis
                   eum accusantium reprehenderit.
                 </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -310,28 +381,36 @@
             <h3 class="footer-title">Social media</h3>
             <ul class="footer-svg-icons">
               <li class="footer-svg-icon-li">
-                <a href="#"  onclick="return false;" class="footer-svg-icon-link">
+                <a
+                  href="#"
+                  onclick="return false;"
+                  class="footer-svg-icon-link"
+                >
                   <svg class="footer-svg-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-svg-icon-li">
-                <a href="#"  onclick="return false;" class="footer-svg-icon-link"
+                <a href="#" onclick="return false;" class="footer-svg-icon-link"
                   ><svg class="footer-svg-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-svg-icon-li">
-                <a href="#"  onclick="return false;" class="footer-svg-icon-link">
+                <a
+                  href="#"
+                  onclick="return false;"
+                  class="footer-svg-icon-link"
+                >
                   <svg class="footer-svg-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-svg-icon-li">
-                <a href="#"  onclick="return false;" class="footer-svg-icon-link"
+                <a href="#" onclick="return false;" class="footer-svg-icon-link"
                   ><svg class="footer-svg-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -343,24 +422,25 @@
 
         <form class="footer-subscribe">
           <label class="footer-title">Subscribe</label>
-          
-            <div class="footer-form-icons">
-              <div class="row">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  class="footer-input" required
-                />
+
+          <div class="footer-form-icons">
+            <div class="row">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer-input"
+                required
+              />
               <button type="submit" class="footer-button">
                 <h3 class="footer-title-button">Subscribe</h3>
                 <svg width="24" height="20">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
-              </div>
+            </div>
           </div>
-      </form>
+        </form>
       </div>
     </footer>
     <!-- ---------------BURGER-------------------------- -->
@@ -372,70 +452,80 @@
         </svg>
       </button>
       <ul class="mobile-menu">
-        <li> <ul class="burger-nav-items">
-          <li class="burger-nav-item">
-            <a href="./index.html" class="mobile-menu link">Studio</a>
-          </li>
-          <li class="burger-nav-item">
-            <a href="./portfolio.html" class="mobile-menu link active">Portfolio</a>
-          </li>
-          <li class="burger-nav-item">
-            <a href="#"  onclick="return false;" class="mobile-menu link ">Contacts</a>
-          </li>
-        </ul></li>
-
-        <li><ul class="burger-contacts-icons">
-          <li class="burger-contacts-icon">
-            <a href="tel:+110001111111" class="link description contact-icon burger-number"
-              ><svg width="22" height="28" class="svg phone">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg> <span>
-                +11 (000) 111-11-11
-              </span> </a
-            >
-          <li class="burger-contacts-icon">
-            <a
-              href="mailto:info@devstudio.com"
-              class="link description contact-icon burger"
+        <li>
+          <ul class="burger-nav-items">
+            <li class="burger-nav-item">
+              <a href="./index.html" class="mobile-menu link">Studio</a>
+            </li>
+            <li class="burger-nav-item">
+              <a href="./portfolio.html" class="mobile-menu link active"
+                >Portfolio</a
               >
-              <svg width="20" height="20" class="svg">
-                <use href="./images/icons.svg#icon-envelop"></use>
-              </svg>
-              <span>info@devstudio.com</span> </a
-            >
-          </li>
-          </li>
-        </ul>
-        <ul class="burger-svg-icons">
-          <li class="burger-svg-icon-li">
-            <a href="#"  onclick="return false;" class="burger-svg-icon-link">
-              <svg class="burger-svg-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="burger-svg-icon-li">
-            <a href="#"  onclick="return false;" class="burger-svg-icon-link"
-              ><svg class="burger-svg-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="burger-svg-icon-li">
-            <a href="#"  onclick="return false;" class="burger-svg-icon-link">
-              <svg class="burger-svg-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="burger-svg-icon-li">
-            <a href="#"  onclick="return false;" class="burger-svg-icon-link"
-              ><svg class="burger-svg-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul></li>
+            </li>
+            <li class="burger-nav-item">
+              <a href="#" onclick="return false;" class="mobile-menu link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <ul class="burger-contacts-icons">
+            <li class="burger-contacts-icon">
+              <a
+                href="tel:+110001111111"
+                class="link description contact-icon burger-number"
+                ><svg width="22" height="28" class="svg phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <span> +11 (000) 111-11-11 </span>
+              </a>
+            </li>
+
+            <li class="burger-contacts-icon">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link description contact-icon burger"
+              >
+                <svg width="20" height="20" class="svg">
+                  <use href="./images/icons.svg#icon-envelop"></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="burger-svg-icons">
+            <li class="burger-svg-icon-li">
+              <a href="#" onclick="return false;" class="burger-svg-icon-link">
+                <svg class="burger-svg-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-svg-icon-li">
+              <a href="#" onclick="return false;" class="burger-svg-icon-link"
+                ><svg class="burger-svg-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-svg-icon-li">
+              <a href="#" onclick="return false;" class="burger-svg-icon-link">
+                <svg class="burger-svg-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-svg-icon-li">
+              <a href="#" onclick="return false;" class="burger-svg-icon-link"
+                ><svg class="burger-svg-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
 
@@ -446,7 +536,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
-              <!-- ---------------BURGER-------------------------- -->
-
+    <script defer src="js/filter-cards.js"></script>
+    <!-- ---------------BURGER-------------------------- -->
   </body>
 </html>
