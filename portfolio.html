@@ -113,7 +113,11 @@
           <h2 class="subtitle secret-name">empty</h2>
           <ul class="buttons-items">
             <li class="button-item">
-              <button class="btn" type="button" onclick="filterCards('All')">
+              <button
+                class="btn active"
+                type="button"
+                onclick="filterCards(this,'All')"
+              >
                 All
               </button>
             </li>
@@ -121,18 +125,26 @@
               <button
                 class="btn"
                 type="button"
-                onclick="filterCards('Web Site')"
+                onclick="filterCards(this,'Web Site')"
               >
                 Web Site
               </button>
             </li>
             <li class="button-item">
-              <button class="btn" type="button" onclick="filterCards('App')">
+              <button
+                class="btn"
+                type="button"
+                onclick="filterCards(this,'App')"
+              >
                 App
               </button>
             </li>
             <li class="button-item">
-              <button class="btn" type="button" onclick="filterCards('Design')">
+              <button
+                class="btn"
+                type="button"
+                onclick="filterCards(this,'Design')"
+              >
                 Design
               </button>
             </li>
@@ -140,7 +152,7 @@
               <button
                 class="btn"
                 type="button"
-                onclick="filterCards('Marketing')"
+                onclick="filterCards(this,'Marketing')"
               >
                 Marketing
               </button>
